@@ -462,12 +462,12 @@ background-color: #1a641d;
   }
 
   /* LEFT GROUP */
-  .nav-left {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
+  
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
   /* SHOW HAMBURGER */
   .menu-icon {
     display: block;
@@ -518,7 +518,11 @@ background-color: #1a641d;
     align-items: center;
     gap: 30px;
   }
-
+/* FIX FEATURES PAGE GRID */
+.feature-grid {
+  grid-template-columns: 1fr;  /* 🔥 THIS FIXES YOUR SCREENSHOT */
+  padding: 40px 20px;
+}
   /* COMMUNITY */
   .community-types,
   .community-benefits {
