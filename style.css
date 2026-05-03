@@ -391,18 +391,26 @@
   text-align: center;
   box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
+@media (max-width: 768px) {
+
+  /* FORCE COLUMN */
   .feature-items {
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
     gap: 20px;
     padding: 30px 20px;
   }
 
+  /* FORCE FULL WIDTH CARDS */
   .feature {
     width: 100% !important;
-    max-width: 100% !important;  
-    margin: 0;                  
+    max-width: 100% !important;
+    flex: none !important;
+    margin: 0 !important;
   }
+
+}
 
 
 .nav-links {
