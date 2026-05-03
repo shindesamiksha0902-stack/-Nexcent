@@ -372,10 +372,20 @@
 
 @media (max-width: 768px) {
 
-  /* FORCE COLUMN */
-    .feature-items {
-    display: block !important;
+  /* FIX FEATURES PAGE GRID PROPERLY */
+  .feature-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important; /* 🔥 ONE COLUMN */
+    gap: 20px;
+    padding: 30px 20px;
   }
+
+  .feature-box {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+
 
   .feature {
     width: 100% !important;
