@@ -407,20 +407,26 @@ background-color: #1a641d;
 }
 
 /* SIDEBAR */
+/* SIDEBAR */
 .sidebar {
   position: fixed;
   top: 0;
-  right: -250px; /* hidden */
+  left: -250px;   /* 👈 change from right to left */
   width: 250px;
   height: 100%;
   background: white;
-  box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+  box-shadow: 5px 0 20px rgba(0,0,0,0.1);
   padding: 60px 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   transition: 0.3s;
   z-index: 1000;
+}
+
+/* OPEN FROM LEFT */
+#menu-toggle:checked ~ .sidebar {
+  left: 0;
 }
 
 .sidebar a {
@@ -433,10 +439,6 @@ background-color: #1a641d;
   color: #4caf4f;
 }
 
-/* TOGGLE SIDEBAR */
-#menu-toggle:checked ~ .sidebar {
-  right: 0;
-}
 
 /* =========================
    RESPONSIVE (MOBILE)
@@ -526,20 +528,25 @@ background-color: #1a641d;
     width: 90%;
     padding: 25px;
   }
-    .nav-links {
-    display: none;
+
+
+
+
+  .navbar {
+    flex-direction: row; /* 🔥 force same line */
+    justify-content: flex-start;
   }
 
-  .nav-btn {
-    display: none;
-  }
-
-  /* SHOW HAMBURGER */
   .menu-icon {
     display: block;
   }
 
-  .navbar {
-    justify-content: space-between;
+  .nav-links,
+  .nav-btn {
+    display: none;
+  }
+
+  .logo img {
+    height: 24px;
   }
 }
