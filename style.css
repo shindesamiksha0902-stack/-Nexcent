@@ -332,6 +332,7 @@
 .testimonial {
   display: flex;
   align-items: center;
+  justify-content: center; 
   gap: 50px;
   padding: 80px 100px;
   background: #f5f7fa;
@@ -342,9 +343,10 @@
   border-radius: 10px;
 }
 
-.test-text p {
-  color: #777;
-  margin-bottom: 15px;
+.test-text {
+  text-align: center; 
+  max-width: 600px;
+  margin: auto;
 }
 
 .test-text h4 {
@@ -358,7 +360,8 @@
 
 .test-logos {
   display: flex;
-  gap: 15px;
+  justify-content: center; 
+  gap: 20px;
   margin: 15px 0;
 }
 
@@ -367,8 +370,8 @@
 }
 
 .meet-link {
-  color: #4caf4f;
-  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 /* ===== BLOG ===== */
