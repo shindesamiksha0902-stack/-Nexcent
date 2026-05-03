@@ -2,26 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Features - Nexcent</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="page-bg">
-  <div class="main-box">
+<!-- NAVBAR -->
+<div class="navbar">
 
-    <div class="navbar">
+  <div class="nav-left">
+    <input type="checkbox" id="menu-toggle">
 
-  <!-- HAMBURGER FIRST -->
-  <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">☰</label>
 
-  <label for="menu-toggle" class="menu-icon">
-    ☰
-  </label>
+    <div class="logo">
+      <img src="Images/logo.svg" alt="logo">
+    </div>
+  </div>
 
-  <!-- LOGO -->
-  <div class="logo">
-    <img src="Images/logo.svg" alt="logo">
+  <!-- SIDEBAR (IMPORTANT POSITION) -->
+  <div class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="featurespg.html">Features</a>
+    <a href="communitypg.html">Community</a>
+    <a href="blog.html">Blog</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="registeration.html" class="nav-btn">Register</a>
   </div>
 
   <!-- DESKTOP NAV -->
@@ -35,17 +42,8 @@
 
   <a href="registeration.html" class="nav-btn">Register Now →</a>
 
-  <!-- SIDEBAR -->
-  <div class="sidebar">
-    <a href="index.html">Home</a>
-    <a href="featurespg.html">Features</a>
-    <a href="communitypg.html">Community</a>
-    <a href="blog.html">Blog</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="registeration.html" class="nav-btn">Register</a>
-  </div>
-
 </div>
+
 <!-- HERO -->
 <section class="feature-hero">
   <h1>Powerful Features</h1>
@@ -57,42 +55,36 @@
 
   <div class="feature-box">
     <h1>🪪</h1>
-    <br>
     <h3>Membership Management</h3>
     <p>Automate renewals, payments and member tracking.</p>
   </div>
 
   <div class="feature-box">
     <h1>📈</h1>
-    <br>
     <h3>Analytics Dashboard</h3>
     <p>Track growth, engagement and performance in real time.</p>
   </div>
 
   <div class="feature-box">
     <h1>🗓️</h1>
-    <br>
     <h3>Event Management</h3>
     <p>Create and manage events seamlessly.</p>
   </div>
 
   <div class="feature-box">
     <h1>💳</h1>
-    <br>
     <h3>Payment System</h3>
     <p>Secure and fast payment integrations.</p>
   </div>
 
   <div class="feature-box">
     <h1>👥</h1>
-    <br>
     <h3>Community Tools</h3>
     <p>Engage members with built-in tools.</p>
   </div>
 
   <div class="feature-box">
     <h1>📄</h1>
-    <br>
     <h3>Custom Reports</h3>
     <p>Generate reports tailored to your needs.</p>
   </div>
@@ -102,7 +94,7 @@
 <!-- CTA -->
 <section class="cta">
   <h2>Ready to grow your community?</h2>
-  <button class="main-btn">Get Started</button>
+  <a href="registeration.html" class="main-btn">Get Started</a>
 </section>
 
 </body>
