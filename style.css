@@ -371,27 +371,6 @@
 ========================= */
 
 @media (max-width: 768px) {
-/* ===== FIX NAVBAR (NO REDESIGN) ===== */
-/* ===== HOME PAGE FEATURES FIX ===== */
-
-.feature-items {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center;
-  gap: 25px;
-  padding: 40px 20px;
-}
-
-.feature {
-  width: 100%;
-  max-width: 320px;
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-}
-@media (max-width: 768px) {
 
   /* FORCE COLUMN */
   .feature-items {
@@ -410,7 +389,7 @@
     margin: 0 !important;
   }
 
-}
+
 
 
 .nav-links {
