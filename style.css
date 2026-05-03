@@ -391,6 +391,19 @@
   text-align: center;
   box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
+  .feature-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+
+  .feature {
+    width: 100% !important;
+    max-width: 100% !important;  
+    margin: 0;                  
+  }
+
 
 .nav-links {
   display: none !important;
