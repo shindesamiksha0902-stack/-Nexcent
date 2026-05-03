@@ -412,7 +412,109 @@
   color: #4caf4f;
   text-decoration: none;
 }
+/* ===== PRICING HERO ===== */
 
+.pricing-hero {
+  text-align: center;
+  padding: 80px 20px 40px;
+  max-width: 700px;
+  margin: auto; /* THIS FIXES CENTERING */
+}
+.pricing-hero h1 {
+  font-size: 40px;
+}
+
+.pricing-hero h2 {
+  color: #4caf4f;
+  margin: 10px 0;
+}
+
+.pricing-hero p {
+  color: #777;
+}
+
+/* ===== CARDS ===== */
+
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 80px;
+}
+
+.price-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  text-align: center;
+  position: relative;
+}
+
+.price-card h1 {
+  margin: 20px 0;
+  font-size: 32px;
+}
+
+.price-card span {
+  font-size: 14px;
+  color: #777;
+}
+
+.price-card ul {
+  list-style: none;
+  margin-top: 20px;
+  text-align: left;
+  color: #555;
+}
+
+.price-card ul li {
+  margin: 8px 0;
+}
+
+/* POPULAR CARD */
+.popular {
+  transform: scale(1.05);
+  border: 2px solid #4caf4f;
+}
+
+.tag {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #4caf4f;
+  color: white;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+/* ===== FEATURES ===== */
+
+.pricing-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 60px 100px;
+  background: #f5f7fa;
+  text-align: center;
+}
+
+.pf-box {
+  max-width: 220px;
+  margin: auto;
+}
+
+.pf-box h4 {
+  margin-bottom: 8px;
+}
+
+.pf-box p {
+  color: #777;
+  font-size: 14px;
+}
 
 /* ===== MOBILE ===== */
 
@@ -523,5 +625,15 @@
   .blog-card {
     width: 100%;
     max-width: 320px;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-features {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
   }
 }
