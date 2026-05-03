@@ -3,26 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Features - Nexcent</title>
+  <title>Landing Page</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- NAVBAR (keep same as your site) -->
 <div class="navbar">
 
-  <!-- CHECKBOX FIRST -->
   <input type="checkbox" id="menu-toggle">
 
-  <!-- LEFT (ICON + LOGO) -->
   <div class="nav-left">
     <label for="menu-toggle" class="menu-icon">☰</label>
-
     <div class="logo">
       <img src="Images/logo.svg">
     </div>
   </div>
 
-  <!-- SIDEBAR (MUST BE HERE) -->
   <div class="sidebar">
     <a href="index.html">Home</a>
     <a href="featurespg.html">Features</a>
@@ -32,7 +29,6 @@
     <a href="registeration.html" class="nav-btn">Register</a>
   </div>
 
-  <!-- DESKTOP NAV -->
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="featurespg.html">Features</a></li>
@@ -45,49 +41,52 @@
 
 </div>
 
-<!-- HERO -->
-<section class="feature-hero">
-  <h1>Powerful Features</h1>
-  <p>Everything you need to manage and grow your community.</p>
+<!-- FEATURES CARDS -->
+<section class="features">
+  <div class="features-text">
+    <h2>Manage your entire community<br>in a single system</h2>
+    <p>Who is Nexcent suitable for?</p>
+  </div>
+
+  <div class="feature-items">
+
+    <div class="feature">
+      <div class="icon">👥</div>
+      <h3>Membership Organisations</h3>
+      <p>Our membership management software provides full automation of membership renewals and payments</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">🏢</div>
+      <h3>National Associations</h3>
+      <p>Our membership management software provides full automation of membership renewals and payments</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">⚽</div>
+      <h3>Clubs And Groups</h3>
+      <p>Our membership management software provides full automation of membership renewals and payments</p>
+    </div>
+
+  </div>
 </section>
 
-<!-- SECTION 1 -->
+<!-- IMAGE + TEXT SECTION -->
 <section class="feature-row">
+
   <div class="feature-img">
     <img src="Images/featurepg.svg">
   </div>
 
   <div class="feature-text">
     <h2>The unseen of spending three years at Pixelgrade</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum.
+      Sed accumsan quam vitae est varius fringilla.
+    </p>
     <a class="main-btn">Learn More</a>
   </div>
-</section>
 
-<!-- STATS -->
-<section class="feature-stats">
-  <h3>Helping a local <span>business reinvent itself</span></h3>
-
-  <div class="stats-grid">
-    <div>👥 2,245,341<br><small>Members</small></div>
-    <div>🏢 46,328<br><small>Clubs</small></div>
-    <div>📅 828,867<br><small>Events</small></div>
-    <div>💳 1,926,436<br><small>Payments</small></div>
-  </div>
-</section>
-
-<!-- SECTION 2 -->
-<section class="feature-row reverse">
-  <div class="feature-img">
-    <img src="Images/featurepg2.svg">
-  </div>
-
-  <div class="feature-text">
-    <h2>How to design your site footer like we did</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <a class="main-btn">Learn More</a>
-  </div>
 </section>
 
 </body>
-</html>
