@@ -440,8 +440,10 @@ background-color: #1a641d;
 }
 
 
+/*  RESPONSIVE (MOBILE) */
+
 /* =========================
-   RESPONSIVE (MOBILE)
+   MOBILE FIX (ONLY THIS)
 ========================= */
 
 @media (max-width: 768px) {
@@ -451,17 +453,36 @@ background-color: #1a641d;
     width: 95%;
   }
 
-  /* NAVBAR */
+  /* NAVBAR FIX */
   .navbar {
-    flex-direction: column;
-    gap: 15px;
-    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
   }
 
+  /* LEFT GROUP */
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* SHOW HAMBURGER */
+  .menu-icon {
+    display: block;
+    font-size: 24px;
+  }
+
+  /* HIDE DESKTOP NAV */
   .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+    display: none;
+  }
+
+  /* KEEP BUTTON SMALL */
+  .nav-btn {
+    font-size: 12px;
+    padding: 6px 10px;
   }
 
   /* HERO */
@@ -473,10 +494,6 @@ background-color: #1a641d;
 
   .hero-text h1 {
     font-size: 32px;
-  }
-
-  .hero-text p {
-    font-size: 14px;
   }
 
   .hero-image {
@@ -495,10 +512,6 @@ background-color: #1a641d;
     gap: 20px;
   }
 
-  .client-logos img {
-    width: 60px;
-  }
-
   /* FEATURES */
   .feature-items {
     flex-direction: column;
@@ -506,17 +519,7 @@ background-color: #1a641d;
     gap: 30px;
   }
 
-  .feature {
-    max-width: 300px;
-  }
-
-  /* FEATURES PAGE GRID */
-  .feature-grid {
-    grid-template-columns: 1fr;
-    padding: 40px 20px;
-  }
-
-  /* COMMUNITY PAGE */
+  /* COMMUNITY */
   .community-types,
   .community-benefits {
     flex-direction: column;
@@ -527,26 +530,5 @@ background-color: #1a641d;
   .register-box {
     width: 90%;
     padding: 25px;
-  }
-
-
-
-
-  .navbar {
-    flex-direction: row; /* 🔥 force same line */
-    justify-content: flex-start;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .nav-links,
-  .nav-btn {
-    display: none;
-  }
-
-  .logo img {
-    height: 24px;
   }
 }
