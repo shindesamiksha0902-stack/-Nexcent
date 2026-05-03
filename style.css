@@ -616,7 +616,9 @@
   .blog-section {
     padding: 40px 20px;
   }
-
+  .blog.test-text.test-logos{
+    align-content: center;
+  }
   .blog-cards {
     flex-direction: column;
     align-items: center;
